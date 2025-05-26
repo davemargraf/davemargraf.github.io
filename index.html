@@ -1,89 +1,132 @@
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-    <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>David Margraf, PharmD, PhD</title>
-        <style>
-        body {
-          background-color: #121212;
-            color: #e0e0e0;
-            font-family: Arial, sans-serif;
-          max-width: 700px;
-          margin: 50px auto;
-          padding: 20px;
-          line-height: 1.6;
-        }
-      
-      h1 {
-        font-size: 2em;
-        margin-bottom: 0.2em;
-        color: #ffffff;
-      }
-      
-      .subtitle {
-        font-weight: bold;
-        color: #bbbbbb;
-          margin-bottom: 1.5em;
-      }
-      
-      a {
-        color: #80cbc4;
-          text-decoration: none;
-      }
-      
-      a:hover {
-        text-decoration: underline;
-      }
-      
-      .section {
-        margin-top: 2em;
-      }
-      
-      ul {
-        padding-left: 1.2em;
-      }
-      
-      footer {
-        font-size: 0.9em;
-        color: #888;
-          margin-top: 3em;
-      }
-      </style>
-        </head>
-        <body>
-        <h1>David Margraf, PharmD, PhD</h1>
-        <div class="subtitle">PK/PD/Pharmacometrics | Exposure-Response | Modeling & Simulation</div>
-        
-        <p>I’m a pharmacometrician, pharmacist, and scientist focused on translating data into impactful clinical and regulatory decisions.</p>
-        
-        <div class="section">
-        <h2>Projects</h2>
-        <ul>
-        <li><a href="https://yourusername.github.io/project1/">Modeling Exposure-Response</a></li>
-        <li><a href="https://yourusername.github.io/project2/">Population PK Tutorial (Quarto)</a></li>
-        </ul>
-        </div>
-        
-        <div class="section">
-        <h2>Services</h2>
-        <ul>
-        <li>Population PK/PD Modeling</li>
-        <li>Exposure-Response Analyses</li>
-        <li>Regulatory Strategy Support (e.g. NDA, BLA)</li>
-        <li>Model-Based Meta-Analysis</li>
-        </ul>
-        </div>
-        
-        <div class="section">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:davemargraf@gmail.com">davemargraf@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/davidmargraf" target="_blank">linkedin.com/in/davidmargraf</a></p>
-        </div>
-        
-        <footer class="section">
-        <p><em>Hosted with GitHub Pages.</em></p>
-        </footer>
-        </body>
-        </html>
-        
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>David Margraf, PharmD, PhD</title>
+  <script src="https://kit.fontawesome.com/a2e0e6ad39.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --bg-color: #121212;
+      --text-color: #e0e0e0;
+      --link-color: #80cbc4;
+      --section-color: #bbbbbb;
+      --footer-color: #888;
+    }
+
+    body.light {
+      --bg-color: #ffffff;
+      --text-color: #1a1a1a;
+      --link-color: #0066cc;
+      --section-color: #444444;
+      --footer-color: #555555;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 20px;
+      line-height: 1.6;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.2em;
+      color: var(--text-color);
+    }
+
+    .subtitle {
+      font-weight: bold;
+      color: var(--section-color);
+      margin-bottom: 1.5em;
+    }
+
+    a {
+      color: var(--link-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      margin-top: 2em;
+    }
+
+    ul {
+      padding-left: 1.2em;
+    }
+
+    footer {
+      font-size: 0.9em;
+      color: var(--footer-color);
+      margin-top: 3em;
+    }
+
+    .toggle-button {
+      position: fixed;
+      top: 1em;
+      right: 1em;
+      background: transparent;
+      border: 2px solid var(--link-color);
+      color: var(--link-color);
+      padding: 6px 12px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 0.9em;
+    }
+
+    .icon {
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-button" onclick="toggleTheme()">Toggle Dark</button>
+
+  <h1>David Margraf, PharmD, PhD</h1>
+  <div class="subtitle">PK/PD/Pharmacometrics | Exposure-Response | Modeling & Simulation</div>
+
+  <p>I’m a pharmacometrician, pharmacist, and scientist focused on translating data into impactful clinical and regulatory decisions.</p>
+
+  <div class="section">
+    <h2>Contact & Links</h2>
+    <p><i class="fas fa-envelope icon"></i><a href="mailto:davemargraf@gmail.com">davemargraf@gmail.com</a></p>
+    <p><i class="fab fa-linkedin icon"></i><a href="https://linkedin.com/in/davidmargraf" target="_blank">linkedin.com/in/davidmargraf</a></p>
+    <p><i class="fab fa-orcid icon"></i><a href="https://orcid.org/0000-0002-5120-8907" target="_blank">orcid.org/0000-0002-5120-8907</a></p>
+  </div>
+
+  <div class="section">
+    <h2>Projects</h2>
+    <ul>
+      <li><a href="https://yourusername.github.io/project1/">Modeling Exposure-Response</a></li>
+      <li><a href="https://yourusername.github.io/project2/">Population PK Tutorial (Quarto)</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Services</h2>
+    <ul>
+      <li>Population PK/PD Modeling</li>
+      <li>Exposure-Response Analyses</li>
+      <li>Regulatory Strategy Support (e.g. NDA, BLA)</li>
+      <li>Model-Based Meta-Analysis</li>
+    </ul>
+  </div>
+
+  <footer class="section">
+    <p><em>Hosted with GitHub Pages.</em></p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light');
+    }
+  </script>
+</body>
+</html>
